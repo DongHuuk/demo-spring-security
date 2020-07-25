@@ -8,6 +8,8 @@
 <body>
 
 <h1 th:text="${message}">default user Message</h1>
-
+<tr th:each="book : ${books}">
+    <td><span th:text="${book.title}"></span></td>
+</tr>
 </body>
 </html>
